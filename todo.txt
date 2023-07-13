@@ -1,0 +1,5 @@
+Reste à faire :
+- Carte responsive à intégrer
+- Vidéo responsive à intégrer
+- Carousel responsive à améliorer
+- Footer à agencer
