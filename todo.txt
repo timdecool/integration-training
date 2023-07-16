@@ -1,4 +1,1 @@
-Reste à faire :
-- Vidéo responsive à intégrer
 - Carousel responsive à améliorer
-- Footer à agencer
