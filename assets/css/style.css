@@ -13,19 +13,28 @@
 
 /* GENERAL */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     font-family: 'Roboto';
 }
-
-img {
-    box-sizing: border-box;
+.full-width {
+    width: 100%;
 }
-
 .hide-lg {
     display: none;
+}
+
+/* FLEX CLASSES */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction:column;
+}
+.flex-justify-center {
+    justify-content: center;
+}
+.flex-align-center {
+    align-items: center;
 }
 
 /* TITLES */
@@ -43,7 +52,6 @@ h3 {
     font-size: 25px;
     margin-bottom: 10px;
 }
-
 .youlogo {
     font-size: 25px;
     letter-spacing: 5px;
@@ -51,7 +59,7 @@ h3 {
 }
 
 /* TEXT COLOR */
-header, .hero-section, .visual-callout, input[type="submit"] {
+header, .hero-section, .visual-callout, input[type="submit"], .img-placeholder, .carousel-item {
     color: white;
 }
 h2, h3 {
@@ -86,6 +94,12 @@ h2, h3 {
     background-size: cover;
 }
 
+header {
+    background-image: url("../img/bg_hero.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /* BUTTON STYLE */
 input[type="submit"] {
     padding: 15px 40px;
@@ -111,21 +125,17 @@ input[type="submit"] {
 
 /* ENGAGEMENT FORM */
 .engagement-form {
-    padding: 60px 10%;
-    box-sizing: border-box;
+    padding: 60px;
     margin: 30px 10%;
 }
 
 .engagement-form div {
-    display: flex;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 30px;
-    align-items: center;
-    justify-content: center;
 }
 
-input[type="text"] {
+.text-input {
     border: 0;
     padding: 14px 20px;
     width: 50%;
@@ -134,21 +144,14 @@ input[type="text"] {
 
 /* HEADER SECTION */
 header {
-    display: flex;
-    flex-direction: column;
     padding: 80px 10%;
 }
 
 .header {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
 .header-logo {
-    display: flex;
-    align-items: center;
     gap: 15px;
 }
 
@@ -166,14 +169,7 @@ header {
 
 /* HERO SECTION */
 
-header {
-    background-image: url("../img/bg_hero.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 .hero-section {
-    display: flex;
     padding: 100px 0 0;
     text-align: left;
     gap: 80px;
@@ -181,15 +177,12 @@ header {
 }
 
 .hero-text-elements {
-    display: flex;
-    flex-direction: column;
     gap: 40px;
     align-items: flex-start;
     width: 60%
 }
 
 .hero-photo {
-    display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
@@ -210,7 +203,6 @@ header {
 }
 
 .features-list {
-    display: flex;
     padding: 80px;
     justify-content: space-evenly;
     margin: 80px 0;
@@ -219,9 +211,6 @@ header {
 }
 
 .features-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 200px;
     gap: 10px;
 }
@@ -231,32 +220,19 @@ header {
     height: 200px;
     width: 200px;    
     border-radius: 50%;
-    box-sizing: border-box;
     border: 2px solid white;
-    color: white;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* VIDEO SECTION */
-
-video {
-    background-color: var(--bg-media);
-    width: 100%;
-    height: 500px;
-}
 
 .video-text {
     margin: 50px 10%;
     padding: 60px;
     text-align: left;
-    color: var(--text-light);
 }
 
 .video-section iframe {
-    width: 100%;
     aspect-ratio: 560/315;
 }
 
@@ -265,22 +241,14 @@ video {
 }
 
 .row {
-    display: flex;
     gap: 80px;
 }
 
 /* GALLERY SECTION */
 
-.gallery-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .carousel {
     display: grid;
     gap: 20px;
-    width: 100%;
     grid-template-columns: 1fr 2fr 1fr;
 }
 
@@ -292,11 +260,6 @@ video {
 }
 
 .carousel-item {
-    background-color: var(--bg-media);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
     height: 500px;
 }
 
@@ -313,17 +276,13 @@ video {
 }
 
 .photo-gallery {
-    display: flex;
     margin: 100px 10%;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .gallery-item {
     text-align: left;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
     width: 30%;
 }
@@ -349,13 +308,9 @@ video {
 /* ARTICLES */
 .articles-section {
     padding: 100px 10% 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .articles-list {
-    display: flex;
     justify-content: space-around;
     gap: 50px;
 }
@@ -376,10 +331,6 @@ video {
 }
 
 /* FOOTER SECTION */
-.map iframe {
-    width: 100%;
-}
-
 footer, footer .engagement-form input[type="text"] {
     background-color: var(--bg-light);
 }
@@ -388,35 +339,18 @@ footer .engagement-form {
     background-color: white;
 }
 
-.footer-flex {
+.footer {
     padding: 60px 10%;
-    display: flex;
-    flex-direction: row;
     text-align: left;
     gap: 100px;
 }
 
 .footer-head {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     width: 300px;
 }
 
-.map {
-    width: 100%;
-    height: 400px;
-    background-color: var(--bg-media);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .footer-logo {
-    display: flex;
-    align-items: center;
     gap: 10px;
 }
 
@@ -427,7 +361,6 @@ footer .engagement-form {
 
 .footer-nav ul li {
     margin-top: 15px;
-    color: var(--text-light);
 }
 
 footer h3 {
@@ -437,8 +370,6 @@ footer h3 {
 footer p {
     border-top: 2px solid var(--text-light);
     padding-top: 10px;
-    color: var(--text-light);
-    border-color: var(--text-light);
 }
 
 /* MEDIA QUERIES */
@@ -453,13 +384,11 @@ footer p {
     .hide-sm {
         display: none;
     }
+    .full-width-sm {
+        width: 100%;
+    }
     h1 {
         font-size: 45px;
-    }
-
-    /* ENGAGEMENT FORM */
-    input[type="text"] {
-        width: 90%;
     }
 
     /* HEADER */
@@ -477,13 +406,8 @@ footer p {
         align-items: center;
     }
 
-    .hero-text-elements {
-        width: 100%;
-    }
-
     .hero-photo {
         justify-content: center;
-        width: 100%
     }
 
     /* VIDEO */
@@ -504,18 +428,15 @@ footer p {
     .gallery-item {
         text-align: center;
         flex-direction: column-reverse;
-        width: 100%;
     }
 
     .visual-callout>h1, .visual-callout>p {
-        width: 100%;
         text-align: center;
     }
 
     /* ARTICLES */
     .articles-item {
         text-align: center;
-        width: 100%;
     }
 
     /* FOOTER */
@@ -524,7 +445,6 @@ footer p {
         align-items: center;
         text-align: center;
     }
-
     footer p {
         margin: 5%;
         padding: 20px;

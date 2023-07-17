@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css"> 
 </head>
-<body>
+<body class="flex flex-column flex-justify-center">
     <!-- HEADER START -->
-    <header>
+    <header class="flex flex-column">
         <!-- HEADER TOP SECTION -->
-        <div class="header">
-            <div class="header-logo">
+        <div class="header flex flex-align-center full-width">
+            <div class="header-logo flex flex-align-center">
                 <div class="avatar">
                 </div>
                 <div class="youlogo">YOU LOGO</div>
@@ -23,13 +23,13 @@
         </div>
 
         <!-- HERO SECTION -->
-        <div class="hero-section">
-            <div class="hero-text-elements">
+        <div class="hero-section flex">
+            <div class="hero-text-elements flex flex-column full-width-sm">
                 <h1>LANDING PAGE WEBSITE DESIGN TEMPLATE</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci esse corporis voluptas eum nesciunt temporibus!</p>
                 <input type="submit" value="Get started" class="hide-sm">
             </div>
-            <div class="hero-photo">
+            <div class="hero-photo flex full-width-sm">
                 <img src="assets/img/placeholder500.png" alt="placeholder" class="img-sq-placeholder">
             </div>
             <input type="submit" value="Get started" class="hide-lg">
@@ -47,23 +47,23 @@
         <section class="features-section">
             <h2>FEATURES</h2>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At cupiditate possimus, facere eveniet nostrum dolores harum dolore ipsam, tenetur, ipsum laboriosam corrupti iure! Quod aut quidem est voluptatibus, dolorem exercitationem.</p>
-            <div class="features-list bg-light">
-                <div class="features-item">
-                    <div class="img-placeholder">
+            <div class="features-list flex bg-light">
+                <div class="features-item flex flex-align-center flex-column">
+                    <div class="img-placeholder flex flex-align-center flex-justify-center">
                         <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
                     </div>
                     <h3>LOREM IPSUM</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
-                <div class="features-item">
-                    <div class="img-placeholder">
+                <div class="features-item flex flex-align-center flex-column">
+                    <div class="img-placeholder flex flex-align-center flex-justify-center">
                         <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
                     </div>
                     <h3>LOREM IPSUM</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
-                <div class="features-item">
-                    <div class="img-placeholder">
+                <div class="features-item flex flex-align-center flex-column">
+                    <div class="img-placeholder flex flex-align-center flex-justify-center">
                         <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
                     </div>
                     <h3>LOREM IPSUM</h3>
@@ -72,8 +72,8 @@
             </div>
             <div class="engagement-form bg">
                 <h3>LOREM IPSUM DOLOR SIT AMET</h3>
-                <div>
-                    <input type="text" placeholder="Lorem ipsum dolor sit">
+                <div class="flex flex-justify-center flex-align-center">
+                    <input type="text" placeholder="Lorem ipsum dolor sit" class="text-input full-width-sm">
                     <input type="submit" value="Get started">    
                 </div>
             </div>
@@ -82,9 +82,9 @@
         <!-- VIDEO SECTION -->
         <section class="video-section">
             <h2>VIDEO</h2>
-            <iframe src="https://www.youtube.com/embed/2YBtspm8j8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" muted ></iframe>
-            <div class="video-text bg-light">
-                <div class="row">
+            <iframe src="https://www.youtube.com/embed/2YBtspm8j8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" muted class="full-width"></iframe>
+            <div class="video-text bg-light text-light">
+                <div class="row flex">
                     <div class="col">
                         <h3>LOREM IPSUM</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iusto excepturi aliquid natus explicabo iste ex illum, voluptatum repudiandae minus. Delectus corrupti perspiciatis, molestias magni velit dolorem a aperiam inventore quasi!</p>
@@ -102,30 +102,30 @@
         </section>
 
         <!-- GALLERY SECTION -->
-        <section class="gallery-section">
+        <section class="gallery-section flex flex-column flex-align-center">
             <h2>GALLERY</h2>
-            <div class="carousel">
-                <div class="carousel-item item1">
+            <div class="carousel full-width">
+                <div class="carousel-item flex flex-align-center flex-justify-center bg-media item1">
                     <img src="assets/img/left-chevron.png" class="chevron-left hide-sm">
                 </div>
-                <div class="carousel-item item2">
+                <div class="carousel-item flex flex-align-center flex-justify-center bg-media">
                     <i class="fa fa-camera fa-5x" aria-hidden="true"></i>
                 </div>
-                <div class="carousel-item item3">
+                <div class="carousel-item flex flex-align-center flex-justify-center bg-media item3">
                     <img src="assets/img/right-chevron.png" class="chevron-right hide-sm">                    
                 </div>
             </div>
             
-            <div class="photo-gallery">
-                <div class="gallery-item hide-sm">
+            <div class="photo-gallery flex flex-justify-center">
+                <div class="gallery-item flex flex-column hide-sm">
                     <img src="assets/img/placeholder500.png" alt="placeholder">
                     <h3>LOREM IPSUM</h3>
                 </div>
-                <div class="gallery-item hide-sm">
+                <div class="gallery-item flex flex-column hide-sm">
                     <img src="assets/img/placeholder500.png" alt="placeholder">
                     <h3>LOREM IPSUM</h3>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item flex flex-column full-width-sm">
                     <img src="assets/img/placeholder500.png" alt="placeholder">
                     <h3>LOREM IPSUM</h3>
                 </div>
@@ -134,15 +134,15 @@
 
         <!-- VISUAL CALLOUT -->
         <section class="visual-callout">
-            <h1>LOREM IPSUM DOLOR SIT AMET SED DIAM</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi error eaque minus dolorum at inventore.</p>
+            <h1 class="full-width-sm">LOREM IPSUM DOLOR SIT AMET SED DIAM</h1>
+            <p class="full-width-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi error eaque minus dolorum at inventore.</p>
         </section>
 
         <!-- ARTICLES SECTION -->
-        <section class="articles-section">
+        <section class="articles-section flex flex-column flex-align-center">
             <h2>ARTICLES</h2>
-            <div class="articles-list">
-                <div class="articles-item">
+            <div class="articles-list flex">
+                <div class="articles-item full-width-sm">
                     <h3>LOREM IPSUM</h3>
                     <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, deleniti.</p>
                     <img src="assets/img/placeholder500.png" alt="placeholder">
@@ -158,8 +158,8 @@
 
         <div class="engagement-form bg">
             <h3>LOREM IPSUM DOLOR SIT AMET</h3>
-            <div>
-                <input type="text" placeholder="Lorem ipsum dolor sit">
+            <div class="flex flex-align-center flex-justify-center">
+                <input type="text" placeholder="Lorem ipsum dolor sit" class="text-input full-width-sm">
                 <input type="submit" value="Get started">    
             </div>
         </div>
@@ -168,25 +168,23 @@
 
     <!-- FOOTER START -->
     <footer>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5665373.967032176!2d-3.2321335794521424!3d46.10501086839236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e0!3m2!1sfr!2sfr!4v1689514966800!5m2!1sfr!2sfr" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="flex flex-column flex-align-center flex-justify-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5665373.967032176!2d-3.2321335794521424!3d46.10501086839236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrance!5e0!3m2!1sfr!2sfr!4v1689514966800!5m2!1sfr!2sfr" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="full-width"></iframe>
         </div>
 
-        <div class="footer-flex">
-            <div class="footer-head">
-                <div class="footer-logo">
+        <div class="footer flex">
+            <div class="footer-head flex flex-column">
+                <div class="footer-logo flex flex-align-center">
                     <div class="avatar"></div>
                     <div class="youlogo">YOU LOGO</div>
                 </div>
-            <p class="hide-sm">
+            <p class="hide-sm text-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias numquam placeat optio voluptatum aspernatur!
             </p>
-
             </div>
-
             <div class="footer-nav">
                 <h3>LOREM IPSUM</h3>
-                <ul>
+                <ul class="text-light">
                     <li>Lorem Ipsum</li>
                     <li>Dolor sit amet</li>
                     <li>Consectetuer</li>
@@ -197,7 +195,7 @@
             </div>
             <div class="footer-nav">
                 <h3>LOREM IPSUM</h3>
-                <ul>
+                <ul class="text-light">
                     <li>Lorem Ipsum</li>
                     <li>Dolor sit amet</li>
                     <li>Consectetuer</li>
@@ -207,14 +205,14 @@
                 </ul>
             </div>
         </div>
-            <div class="engagement-form bg">
+            <div class="engagement-form flex-align-centern flex-justify-center bg">
                 <h3>LOREM IPSUM DOLOR SIT AMET</h3>
-                <div>
-                    <input type="text" placeholder="Lorem ipsum dolor sit">
+                <div class="flex">
+                    <input type="text" placeholder="Lorem ipsum dolor sit" class="text-input full-width-sm">
                     <input type="submit" value="Get started">    
                 </div>
             </div>
-            <p class="hide-lg">
+            <p class="hide-lg text-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestias numquam placeat optio voluptatum aspernatur!
             </p>
     </footer>
