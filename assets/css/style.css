@@ -354,11 +354,6 @@ footer .engagement-form {
     gap: 10px;
 }
 
-.footer-logo .avatar {
-    height: 70px;
-    width: 70px;
-}
-
 .footer-nav ul li {
     margin-top: 15px;
 }
@@ -445,6 +440,10 @@ footer p {
         align-items: center;
         text-align: center;
     }
+    .footer-logo {
+        justify-content: center;
+    }
+
     footer p {
         margin: 5%;
         padding: 20px;
